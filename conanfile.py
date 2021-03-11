@@ -9,7 +9,7 @@ class LibnopConan(ConanFile):
                   "deserializing C++ data types without external code " \
                   "generators or runtime support libraries."
     license = "Apache-2.0"
-    topics = ("conan", "libnop", "header-only", "serialization", "deserialization")
+    topics = ("conan", "libnop", "header-only", "serializer")
     homepage = "https://github.com/google/libnop"
     url = "https://github.com/conan-io/conan-center-index"
 
