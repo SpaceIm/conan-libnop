@@ -29,6 +29,9 @@ class LibnopConan(ConanFile):
            (compiler == "Visual Studio" and compiler_version < "15"):
             raise ConanInvalidConfiguration("libnop doesn't support {} {}".format(str(compiler), compiler.version))
 
+    def package_id(self):
+        self.info.header_only()
+
     def source(self):
         tools.get(**self.conan_data["sources"][self.version])
         extracted_dir = glob.glob("libnop-*")[0]
